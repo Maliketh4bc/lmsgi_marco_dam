@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Web de Videojuegos">
+    <link rel="stylesheet" href="estilos.css">
+    <title>GameZone</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="brand">
+            <img class="logo" src="imagenes/gamezone-logo.png" alt="Logo de GameZone">
+            <!-- <h1 class="titulo">GameZone</h1> -->
+        </div>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guías</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido-principal">
+        <section class="intro tarjeta">
+            <h2>Bienvenid@ a GameZone</h2>
+            <p>Portal de ejemplo para practicar HTML y CSS</p>
+        </section>
+        <section class="listas-y-tablas tarjeta">
+            <h2>Guía Rápida De Videojuegos</h2>
+            <div class="listas">
+                <div>
+                    <h3>Características ($)</h3>
+                    <ul class="lista">
+                        <li>Juego Caro</li>
+                        <li>Juego Muy Muy Caro</li>
+                        <li>Juego de Rockstar</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Por qué comprar estos juegos?</h3>
+                    <ol class="lista">
+                        <li>Te sobra la pasta</li>
+                        <li>Eres muy friki</li>
+                        <li>Te explotas sexualmente</li>
+                        <li>GTA VI, Nada más que añadir</li>
+                    </ol>
+                </div>
+            </div>
+            <h3>Best Sellers</h3>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Juego</th>
+                        <th>Plataforma</th>
+                        <th>Unidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Red Read Redemption II</td>
+                        <td>PC</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>GTA V</td>
+                        <td>Play Station 5</td>
+                        <td>1245</td>
+                    </tr>
+                    <tr>
+                        <td>Mario Galaxy II</td>
+                        <td>Nintendo Switch</td>
+                        <td>80</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- Formularios -->
+        <section class = "tarjeta">
+            <form name="buscar" action="buscar.html" method="get">
+                <label for="busqueda">Buscar juego:</label>
+                <input type="search" name="busqueda" id="busqueda"
+                placeholder="Escribe título*" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <!-- Formulario registro -->
+        <section class="tarjeta">
+            <h2>Registro de usuario</h2>
+            <form name="registrer" action="registro.html" method="post">
+
+                <!-- Campo de texto -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nameIn" id="nombre" required>
+
+                <!-- Campo de usuario -->
+                <label for="clave">Contraseña:</label>
+                <input type="password" name="pass" id="clave" minlength="6" maxlength="12" required>
+
+                <!-- Campo número -->
+                <label for="edad">Edad:</label>
+                <input type="number" name="age" id="edad" min="0" required>
+
+                <!-- Campo DNI con pattern -->
+                <br>
+                <label for="dni">DNI:</label>
+                <input type="text" name="id" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" required>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="pie">
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
