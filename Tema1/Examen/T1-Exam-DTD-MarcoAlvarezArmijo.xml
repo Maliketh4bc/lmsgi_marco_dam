@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventario SYSTEM "T1-Exam-DTD-MarcoAlvarezArmijo.dtd">
+
+<inventario>
+
+    <item sku="1" moneda="EUR">
+        <nombre>Fidget Spinner</nombre>
+        <precio>15,99</precio>
+        <stock>7000</stock>
+    </item>
+    
+    <item sku="2" moneda="EUR">
+        <nombre>Valorant</nombre>
+        <precio>20</precio>
+        <stock>infinito</stock>
+    </item>
+
+</inventario>

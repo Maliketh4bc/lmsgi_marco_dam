@@ -17,15 +17,16 @@
         </div>
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="#">Guías</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/registro.html">Registro</a></li>
             </ul>
         </nav>
     </header>
     <main id="contenido-principal">
-        <section class="intro tarjeta">
+        <section class="intro-inicio">
             <h2>Bienvenid@ a GameZone</h2>
             <p>Portal de ejemplo para practicar HTML y CSS</p>
         </section>
@@ -37,7 +38,7 @@
                     <ul class="lista">
                         <li>Juego Caro</li>
                         <li>Juego Muy Muy Caro</li>
-                        <li>Juego de Rockstar</li>
+                        <li>Juego de Nintendo</li>
                     </ul>
                 </div>
                 <div>
@@ -45,7 +46,7 @@
                     <ol class="lista">
                         <li>Te sobra la pasta</li>
                         <li>Eres muy friki</li>
-                        <li>Te explotas sexualmente</li>
+                        <li>Tus padres no te quieren</li>
                         <li>GTA VI, Nada más que añadir</li>
                     </ol>
                 </div>
@@ -77,43 +78,6 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-
-
-        <!-- Formularios -->
-        <section class = "tarjeta">
-            <form name="buscar" action="buscar.html" method="get">
-                <label for="busqueda">Buscar juego:</label>
-                <input type="search" name="busqueda" id="busqueda"
-                placeholder="Escribe título*" required>
-                <button type="submit">Buscar</button>
-            </form>
-        </section>
-
-        <!-- Formulario registro -->
-        <section class="tarjeta">
-            <h2>Registro de usuario</h2>
-            <form name="registrer" action="registro.html" method="post">
-
-                <!-- Campo de texto -->
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nameIn" id="nombre" required>
-
-                <!-- Campo de usuario -->
-                <label for="clave">Contraseña:</label>
-                <input type="password" name="pass" id="clave" minlength="6" maxlength="12" required>
-
-                <!-- Campo número -->
-                <label for="edad">Edad:</label>
-                <input type="number" name="age" id="edad" min="0" required>
-
-                <!-- Campo DNI con pattern -->
-                <br>
-                <label for="dni">DNI:</label>
-                <input type="text" name="id" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" required>
-
-                <button type="submit">Registrar</button>
-            </form>
         </section>
     </main>
     

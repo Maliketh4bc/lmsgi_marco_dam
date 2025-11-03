@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<obra xmlns:cat="http://ejemplo.org/catalogo" xmlns:meta="http://ejemplo.org/metadata">
+    <libro>
+        <meta:titulo>La puerta de los tres cerrojos</meta:titulo>
+        <autor>Manu</autor>
+    </libro>
+    <cat:titulo>La mona lisa</cat:titulo>
+    <anio>1300</anio>
+</obra>

@@ -26,7 +26,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: #0d203a;
+    background: #0d203a; /* 0d203a */
 }
 
 .logo {
@@ -49,23 +49,81 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #ffffff;
+    color: #f0f0f0;
     font-weight: bold;
+}
+
+.menu a:hover {
+    color: #808080;
 }
 
 #contenido-principal {
     padding: 1rem;
     flex-grow: 1;
-    color: #ffffff;
+    color: #000000;
 }
 
 .tarjeta {
+    background: #fff;
+    border-radius: 10px;
+    width: min(900px, 95%);
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px #333;
+    color: #0d203a;
+}
+
+.intro-inicio {
+    background: #fff;
+    border-radius: 10px;
+    width: min(900px, 95%);
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px #333;
+    color: #0d203a;
+}
+
+.intro-contacto {
+    text-align: center;
     background: #0d203a;
     border-radius: 10px;
     width: min(900px, 95%);
     margin: 1.5rem auto;
     padding: 1.5rem;
     box-shadow: 0 2px 5px #333;
+    color: #f0f0f0;
+}
+
+.intro-registro {
+    text-align: center;
+    background: #0d203a;
+    border-radius: 10px;
+    width: min(900px, 95%);
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px #333;
+    color: #f0f0f0;
+}
+
+.formulario {
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: min(900px, 95%);
+    font-size: 18px;
+}
+
+#categoria {
+    width: min(900px, 95%);
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #0d203a;
+    color: #f0f0f0;
+}
+
+#mensaje {
+    width: min(900px, 95%);
 }
 
 /* Listas y layout */
@@ -93,11 +151,11 @@ body {
 .tabla td, .tabla th {
     border: solid 1px #f0f0f0;
     padding: 10px;
-    background: #000000;
+    background: #0d203a;
 }
 
 .tabla th {
-    color: #d7e423;
+    color: #f0f0f0;
     text-align: center;
 }
 
@@ -108,9 +166,9 @@ table td {
 }
 
 .pie {
-    color: #d7e423;
+    color: #f0f0f0;
     font-size: 14px;
     padding: 1rem;
-    background: #000000;
+    background: #0d203a;
     text-align: center;
 }

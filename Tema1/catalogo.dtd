@@ -1,0 +1,4 @@
+<!ELEMENT catalogo (pelicula)>
+<!ELEMENT pelicula (anio)>
+<!ATTLIST pelicula nombre NMTOKEN #REQUIRED>
+<!ELEMENT anio (#PCDATA)>

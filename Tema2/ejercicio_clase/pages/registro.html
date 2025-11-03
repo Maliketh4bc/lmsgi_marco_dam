@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Web de Videojuegos">
+    <link rel="stylesheet" href="../estilos.css">
+    <title>GameZone</title>
+</head>
+
+<body>
+    <header class="cabecera">
+        <div class="brand">
+            <a href="../index.html"><img class="logo" src="../imagenes/gamezone-logo.png" alt="Logo de GameZone"></a>
+            <!-- <h1 class="titulo">GameZone</h1> -->
+        </div>
+        <nav class="navegacion">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guías</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contenido-principal">
+        <section class="intro-registro">
+            <h2>Registro</h2>
+            <p>Danos tus datos para saber quien eres</p>
+        </section>
+        <!-- Formulario registro -->
+        <section class="tarjeta">
+            <h2>Registro de usuario</h2>
+            <form name="registrer" action="registro.html" method="post">
+
+                <!-- Campo de texto -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nameIn" id="nombre" required>
+
+                <!-- Campo de usuario -->
+                <label for="clave">Contraseña:</label>
+                <input type="password" name="pass" id="clave" minlength="6" maxlength="12" required>
+
+                <!-- Campo número -->
+                <label for="edad">Edad:</label>
+                <input type="number" name="age" id="edad" min="0" required>
+
+                <!-- Campo DNI o NIE con pattern -->
+                <br>
+                <label for="dni">DNI/NIE:</label>
+                <input type="text" name="id" id="dni" pattern="([X-Zx-z]|[0-9])[0-9]{7}[A-Za-z]" required>
+
+                <!-- Botón de envio de formulario -->
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="pie">
+        <p>&copy; 2025 Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
