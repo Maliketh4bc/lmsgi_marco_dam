@@ -2,86 +2,42 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página Web de Videojuegos">
-    <link rel="stylesheet" href="../estilos.css">
-    <title>GameZone</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página web de videojuegos" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <title>Contacto</title>
 </head>
 
 <body>
     <header class="cabecera">
         <div class="brand">
-            <a href="../index.html"><img class="logo" src="../imagenes/gamezone-logo.png" alt="Logo de GameZone"></a>
-            <!-- <h1 class="titulo">GameZone</h1> -->
+            <img class="logo" src="\imagenes\gamezone-logo.png" alt="Logo de GameZone">
         </div>
-        <nav class="navegacion">
+
+        <nav>
             <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Guías</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/acerca">Noticias</a></li>
+                <li><a href="/servicios">Guías</a></li>
+                <li><a href="">Contacto</a></li>
                 <li><a href="registro.html">Registro</a></li>
+                <li><a href="../pages/tienda.html">Tienda</a></li>
             </ul>
         </nav>
     </header>
+
     <main id="contenido-principal">
-        <section class="intro-contacto">
-            <h2>Contacto</h2>
-            <p>En caso de una incidencia o duda</p>
-        </section>
-        <!-- Formulario de contacto -->
-        <section class="tarjeta">
-            <form name="contacto" action="contacto.php" method="get" autocomplete="off">
-                
-                <!-- Lista desplegable -->
-                <div class="formulario">
-                    <label for="categoria"><h2>Categoría de juego:</h2></label>
-                    <select name="categoria" id="categoria">
-                        <option disabled>-Selecciona categoría-</option>
-                        <option value="rol">Rol</option>
-                        <option value="aventuras">Aventuras</option>
-                        <option value="deportes">Deportes</option>
-                    </select>
-                </div>
-                <!-- Radio y checkbox -->
-                <div class="formulario">    
-                    <h2>Plataforma:</h2>
-                    <label><input type="radio" name="plataforma" value="pc"> PC</label>
-                    <br><br>
-                    <label><input type="radio" name="plataforma" value="ps5"> Ps5</label>
-                    <br><br>
-                    <label><input type="radio" name="plataforma" valie="xbox">Xbox</label>
-                    <br><br>
-                    <label><input type="radio" name="plataforma" valie="switch">Switch</label>
-                </div>
-
-                <div class="formulario">
-                    <h2>Suscribirse a noticias</h2>
-                    <label><input type="checkbox" name="suscripcion" checked>Sí</label>
-                </div>
+        <section class="intro tarjeta">
+            <h2>Contacta con nosotros</h2>
+            <form>
                 <br>
-
-                <!-- hidden se utiliza para enviar datos no visibles para el usuario -->
-                <input type="hidden" name="product-id" value="1234">
-                
-                <!-- Textarea: textos largos -->
-                <div class="formulario">
-                    <h2><label for="mensaje">Deja aquí tu mensaje:</label></h2>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                </div>
-                <!-- Botones -->
-                <br><br>
-                <div class="formulario"><input type="submit" value="Contactar"></div>
-                <br><br>
-                <div class="formulario"><input type="reset" value="Limpiar formulario"></div>
+                <label for="suscripcion"><input type="checkbox" name="suscripcion" checked>Suscribirse</label>
             </form>
         </section>
-    </main>
     
-    <footer class="pie">
-        <p>&copy; 2025 Todos los derechos reservados</p>
-    </footer>
+    </main>
+
 </body>
 
 </html>
